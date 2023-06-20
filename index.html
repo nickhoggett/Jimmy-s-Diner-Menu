@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Smythe&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Jimmy's Diner</h1>
+            <h2>The best burgers and pizzas in town.</h2>
+        </header>
+        <main>
+            <div id="menu"></div>
+            <div id="order" class="display-none">
+                <h3 class="medium-font">Your Order</h3>
+                <div id="orderedItems">
+
+                </div>
+                <div class="total">
+                    <p class="medium-font">Total price:</p>
+                    <div class="small-font align-right">
+                        <p>$<span id="total"></span></p>
+                    </div>
+                </div>
+                <button id="complete" class="button">Complete Order</button>
+            </div>
+            <div id="confirmation">
+                <p>Thank you. Your order is now on it's way!</p>
+            </div>
+        </main>
+        <div id="modal">
+            <div class="modal-inner">
+                <p class="close">X</p>
+                <p>Enter your card details:</p>
+                <form>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                    <input type="text" name="number" id="number" placeholder="Enter Card Number" maxlength="19"
+                        required>
+                    <input type="text" name="CVV" id="cvv" placeholder="CVV" maxlength="3" required>
+                    <button id="pay" class="button" type="submit">Pay</button>
+                    <!-- DEBUG: required is not working.  -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

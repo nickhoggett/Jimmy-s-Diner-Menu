@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+} 
+
+.main-container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+#menu #order{
+    margin: 0 30px;
+}
+
+.button {
+    font-family: 'Akshar', sans-serif;
+    color: white;
+    background: #16DB99;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+    font-size: 24px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+    background-image: url("./images/burger-header.JPG");
+    background-repeat: no-repeat;
+    background-size: 600px 167px;
+    object-fit: cover;
+    color: #ffffff;
+    font-weight: 400;
+    height: 167px;
+    width: 600px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 39px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 35px;
+    padding-left: 45px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 10px;
+    padding-left: 45px;
+}
+
+/* MENU */
+
+.left {
+    display: flex;
+}
+
+.food-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #DEDEDE solid 2px;
+    padding: 60px 40px;
+}
+
+.food-emoji {
+    font-size: 100px;
+    margin: 0 15px 0 0;
+}
+
+.food-details {
+    align-content: left;
+}
+
+.food-details p{
+    margin: 5px 0;
+}
+
+.food-ingredients {
+    font-size: 16px;
+    color: #8B8B8B;
+}
+
+.food-add {
+    font-size: 32px;
+    font-weight: 100;
+    background: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: #DEDEDE solid 2px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+/* ORDER */
+
+.item {
+    display: flex;
+    line-height: 25px;
+    text-align: center;
+}
+
+
+.remove {
+    font-family: 'Akshar', sans-serif;
+    color: #BBBBBB;
+    font-size: 16px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    line-height: 50px;
+    text-align: center;
+    border-top: solid black 2px;
+    margin-top: 10px;
+}
+
+#orderedItems p, .total p {
+    margin: 0;
+    text-align: center;
+}
+
+/* MODAL  */
+
+#modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+    display: none;
+}
+
+.modal-inner {
+    background: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 15px;
+    height: 550px;
+    width: 530px;
+    border-radius: 5px;
+    font-family: 'Akshar', sans-serif;
+    position: relative;
+    top: 100px;
+    left: 0;
+    margin: auto auto;
+    filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+}
+
+.close {
+    position: relative;
+    top: 0;
+    left: 490px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+}
+
+.modal-inner button{
+    width: 90%;
+    position: relative;
+    top: 80px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 90%;
+}
+
+/* CONFIRMATIOM */
+
+#confirmation {
+    display: none;
+    font-size: 32px;
+    background: #ECFDF5;
+    border-radius: 5px;
+    color: #065F46;
+    height: 120px;
+    justify-content: center;
+    margin: 15px 0 150px 0;
+}
+
+/* UTILITIES */
+
+.small-font {
+    font-size: 20px;
+}
+
+.medium-font {
+    font-size: 28px;
+    padding-right: 8px;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+.display-none {
+    display: none;
+}
